@@ -30,4 +30,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewLabel" />
 
+    <com.rohitrj.customview.viewclass.PushButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:foregroundGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialView" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
