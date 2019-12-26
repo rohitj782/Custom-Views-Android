@@ -20,17 +20,18 @@
 
     <com.rohitrj.customview.viewclass.DialView
         android:id="@+id/dialView"
-        app:fanColor1="#FFEB3B"
-        app:fanColor2="#CDDC39"
-        app:fanColor3="#009688"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_marginTop="24dp"
+        app:fanColor1="#FFEB3B"
+        app:fanColor2="#CDDC39"
+        app:fanColor3="#009688"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewLabel" />
 
     <com.rohitrj.customview.viewclass.PushButton
+        android:id="@+id/pushButton"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:foregroundGravity="center"
@@ -38,5 +39,27 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dialView" />
+
+    <Button
+        android:id="@+id/buttonDraw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Draw"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonClip"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pushButton"
+        app:layout_constraintVertical_bias="0.564" />
+
+    <Button
+        android:id="@+id/buttonClip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonDraw"
+        app:layout_constraintTop_toTopOf="@+id/buttonDraw" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
